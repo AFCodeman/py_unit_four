@@ -6,9 +6,9 @@ def even_or_odd(number):
     :return: either "x is an even number" or "x is an odd number"
     """
     if number%2==0:
-        print(number, "is an even number")
+        return(str(number)+ " is an even number")
     if number%2==1:
-        print(number, "is an odd number")
+        return(str(number)+ " is an odd number")
 
 
 
