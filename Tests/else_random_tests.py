@@ -1,12 +1,20 @@
 import unittest
 from divisible import is_divisible
 from exams import gets_a_zero
+from maximum import max
 
 class MyTestCase(unittest.TestCase):
 
     # In the space below, create a series of tests that will test the max function. Use the directions
     # as a guide for which tests to write. Instead of assertTrue or assertFalse, all of the tests will
-    # be assertEqual. Make sure to import the appropriate information at the top of this file.
+    # be assertEqual. Make sure to import the appropriate information at the top of this file.\
+
+    def test_max(self):
+        self.assertEqual(4, max(4,4))
+        self.assertEqual(-4, max(-12,-4))
+        self.assertEqual(12, max(12,-4))
+        self.assertEqual(12, max(4,12))
+        self.assertEqual(12, max(12,4))
 
 
     def test_is_divisible(self):
