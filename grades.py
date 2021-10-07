@@ -1,5 +1,6 @@
+import math
+
 def points(grade, is_AP):
-    score = 0
     if grade > 94:
         score = 4
     elif grade > 85:
@@ -15,4 +16,4 @@ def points(grade, is_AP):
     return score
 
 
-points(76, True)
+print(points(76, True))
