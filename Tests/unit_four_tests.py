@@ -32,6 +32,9 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual("You win!", rock_paper_scissors.who_wins(3, 2))
         self.assertEqual("It is a tie", rock_paper_scissors.who_wins(1, 1))
 
+    def test_get_card(self):
+        card = assignment_four.get_card()
+        self.assertTrue(card>=1 and card<=10)
     
 
 if __name__ == '__main__':
