@@ -10,10 +10,13 @@ def get_card():
     return card
 
 def get_winner():
-    ptot = get_card() + get_card()
-    dtot = get_card() + get_card()
-    print(ptot)
-    another = int((input("Type 1 if you want another card, type 2 if you want to continue"))
+    ptot = int(get_card() + get_card())
+    dtot = int(get_card() + get_card())
+    morecard = int(input("Enter the number '1' if you want another card."))
+    if morecard == 1:
+        ptot + get_card()
+    else:
+        ptot
     if ptot >= 21:
         return("The dealer wins")
     elif ptot > dtot:
@@ -23,6 +26,6 @@ def get_winner():
     elif ptot == dtot:
         return("The dealer wins")
     else:
-        return("What?!?")
+        return("Error. Does not compute.")
 
 print (get_winner())
