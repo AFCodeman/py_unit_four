@@ -3,13 +3,17 @@ import math
 
 def get_card():
     """
-
-    :return:
+    generates a random card one through ten
+    :return: the desired card
     """
     card = random.randint(1,10)
     return card
 
 def get_winner():
+    """
+    Uses the get_card function and assigns cards to the player and computer. Then the function does blackjack
+    :return: Will say who is winner
+    """
     ptot = int(get_card() + get_card())
     dtot = int(get_card() + get_card())
     morecard = int(input("Enter the number '1' if you want another card."))
